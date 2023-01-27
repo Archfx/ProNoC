@@ -66,13 +66,13 @@ Set the expected location to share with the container
 ```shell
 export LOC=<directory you want>
 ```
-Clone the Github Repo to you local machine
+Clone the Github Repo to your local machine
 ```shell 
 git clone https://github.com/amonemi/ProNoC
 ```
 
 
-Run the Docker image with mounting the ProNoC repo
+Run the Docker image by mounting the ProNoC repo
 ```shell
 docker run -t -p 6080:6080 -v "${PWD}/:/ProNoC" -w /ProNoC --name pronoc archfx/pronoc
 ```
