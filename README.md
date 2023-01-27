@@ -52,5 +52,38 @@ If you found ProNoC useful please cite some of the following references in your 
 For more information and tutorials, please check following directories:
 -  "trunk/doc"
 
+## Docker Environment
+
+You can use the docker environment with GUI to use the ProNoC on all Platforms including Apple silicon
+
+Clone from docker-hub
+
+```shell
+docker pull archfx/pronoc
+```
+
+Set the expected location to share with the container
+```shell
+export LOC=<directory you want>
+```
+Clone the Github Repo to you local machine
+```shell 
+git clone https://github.com/amonemi/ProNoC
+```
+
+
+Run the Docker image with mounting the ProNoC repo
+```shell
+docker run -t -p 6080:6080 -v "${PWD}/:/ProNoC" -w /ProNoC --name pronoc archfx/pronoc
+```
+
+This will generate a VNC server link, that you can access the GUI environment with the shared directory on the browser
+
+In order to access the container with CLI
+
+```shell
+docker exec -it pronoc /bin/bash
+```
+
 ## Bug reporting
 For any bug  or feedback reporting please contact me via <alirezamonemi@opencores.org>

@@ -1,0 +1,41 @@
+#######################################################################
+##	File: Paths
+##    
+##	Copyright (C) 2014-2021  Alireza Monemi
+##    
+##	This file is part of ProNoC 2.1.0 
+##
+## 	WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT 
+##	MAY CAUSE UNEXPECTED BEHAVIOR.
+################################################################################
+
+$setting = bless( {
+                    'GUI_SETTING' => {
+                                       'DSPLY_X' => 'default',
+                                       'FONT_SIZE' => 'default',
+                                       'ICON_SIZE' => 'default',
+                                       'DSPLY_Y' => 'default'
+                                     },
+                    'parameters_order' => {
+                                            'PATH' => [
+                                                        'PRONOC_WORK',
+                                                        'QUARTUS_BIN',
+                                                        'VIVADO_BIN',
+                                                        'SDK_BIN',
+                                                        'MODELSIM_BIN'
+                                                      ],
+                                            'GUI_SETTING' => [
+                                                               'FONT_SIZE',
+                                                               'ICON_SIZE',
+                                                               'DSPLY_X',
+                                                               'DSPLY_Y'
+                                                             ]
+                                          },
+                    'PATH' => {
+                                'MODELSIM_BIN' => undef,
+                                'SDK_BIN' => undef,
+                                'VIVADO_BIN' => undef,
+                                'PRONOC_WORK' => '/ProNoC/ProNoC/mpsoc_work',
+                                'QUARTUS_BIN' => undef
+                              }
+                  }, 'ProNOC' );
